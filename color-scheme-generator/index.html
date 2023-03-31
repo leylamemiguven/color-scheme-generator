@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form  id="selection-form" class="selection-form" onsubmit="return false;">
+            <div>
+                <input type="color" id="seed-color" name="seed-color" value="#e66465">
+            </div>
+            <div>
+                 <select name="mode" id="mode" class="mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+            </div>
+            <button type="Submit" id="get-scheme-btn" class="get-scheme-btn" >Get Color Scheme</button>
+        </form>
+        <div id="clipboard-confirmation" class="clipboard-confirmation">
+            
+        </div>
+        <div id="scheme-display" class="scheme-display">
+            <div id="color1" class="swatch"></div>
+            <div id="color2" class="swatch"></div>
+            <div id="color3" class="swatch"></div>
+            <div id="color4" class="swatch"></div>
+            <div id="color5" class="swatch"></div>
+        </div>
+         <div id="hex-display" class="hex-display">
+        </div>
+        
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
